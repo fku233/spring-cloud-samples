@@ -1,0 +1,12 @@
+server:
+  context-path: /accounts
+  port: 6000
+
+security:
+  oauth2:
+    client:
+      clientId: account-service
+      clientSecret: test
+      accessTokenUri: http://127.0.0.1:5000/auth/oauth/token
+      grant-type: client_credentials
+      scope: server

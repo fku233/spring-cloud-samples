@@ -1,0 +1,18 @@
+# 配置文件修改后可通过 http://HOST:PORT/xxx/refresh (POST) 刷新配置(xxx表示服务根路径)，无需重启服务。
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+  profiles:
+     active: native
+
+security:
+  user:
+    name: test
+    password: test
+

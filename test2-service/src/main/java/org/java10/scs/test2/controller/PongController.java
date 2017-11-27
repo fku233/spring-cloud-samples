@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("pong")
 public class PongController {
-    @GetMapping("/")
+    @GetMapping("")
     public String pong() {
         return "pong";
     }

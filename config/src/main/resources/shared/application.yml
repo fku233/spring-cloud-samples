@@ -1,6 +1,9 @@
 logging:
   level:
-    org.springframework.security: INFO
+    org.springframework.security: DEBUG
+    org.springframework.cloud.netflix.feign: DEBUG
+    okhttp.feign: DEBUG
+    org.java10.scs.test1: DEBUG
 
 hystrix:
   command:

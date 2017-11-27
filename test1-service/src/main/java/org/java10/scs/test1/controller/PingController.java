@@ -15,7 +15,7 @@ public class PingController {
     @Autowired
     private TestClient testClient;
 
-    @GetMapping("/")
+    @GetMapping("")
     public String ping() {
         return testClient.ping();
     }

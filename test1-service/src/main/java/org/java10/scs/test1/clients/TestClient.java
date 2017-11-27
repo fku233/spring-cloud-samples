@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Created by nil on 2017/11/27.
  */
-@FeignClient(name="test2-service-client",fallback = TestClientFallBack.class)
+@FeignClient(name="test2-service",fallback = TestClientFallBack.class)
 public interface TestClient {
 
     @GetMapping(value = "/test2/pong")

@@ -1,3 +1,7 @@
 server:
   context-path: /test1
   port: 6668
+
+feign:
+  okhttp:
+    enabled: true

@@ -1,4 +1,0 @@
-server:
-  context-path: /test2
-#  port: 6667
-  port: 6669

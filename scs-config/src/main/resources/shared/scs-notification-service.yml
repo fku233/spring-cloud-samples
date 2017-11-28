@@ -1,0 +1,9 @@
+server:
+  context-path: /notifications
+  port: 6669
+
+feign:
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false

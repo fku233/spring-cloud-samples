@@ -12,13 +12,14 @@
     <name>spring-cloud-samples</name>
 
     <modules>
-        <module>registry</module>
-        <module>gateway</module>
-        <module>config</module>
-        <module>auth-service</module>
-        <module>account-service</module>
-        <module>test1-service</module>
-        <module>test2-service</module>
+        <module>scs-registry</module>
+        <module>scs-gateway</module>
+        <module>scs-config</module>
+        <module>scs-model</module>
+        <module>scs-account-service</module>
+        <module>scs-order-service</module>
+        <module>scs-basic-service</module>
+        <module>scs-notification-service</module>
     </modules>
 
 </project>

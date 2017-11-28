@@ -1,0 +1,45 @@
+server:
+  port: 3000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    scs-basic-service:
+       path: /basic/**
+       serviceId: scs-basic-service
+       stripPrefix: false
+       sensitiveHeaders:
+
+    scs-account-service:
+        path: /accounts/**
+        serviceId: scs-account-service
+        stripPrefix: false
+        sensitiveHeaders:
+
+    scs-order-service:
+       path: /orders/**
+       serviceId: scs-order-service
+       stripPrefix: false
+       sensitiveHeaders:
+
+    scs-notification-service:
+       path: /notifications/**
+       serviceId: scs-notification-service
+       stripPrefix: false
+       sensitiveHeaders:

@@ -1,0 +1,9 @@
+server:
+  context-path: /orders
+  port: 6667
+
+feign:
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
